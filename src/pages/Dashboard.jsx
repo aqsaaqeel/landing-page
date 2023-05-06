@@ -5,6 +5,7 @@ import { BiBookmarks } from "react-icons/bi";
 import { RiCalendarEventLine } from "react-icons/ri";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { LineSvg } from "../assets";
+import "./Dashboard.css"
 import {
   LineGraphComp,
   PieChartComp,
@@ -52,7 +53,7 @@ export const Dashboard = () => {
         <div className="flex flex-col md:p-8">
           <Navbar />
           {/* Card section */}
-          <div className="flex flex-col md:flex-row md:justify-between md:space-y-0 md:space-x-4 md:mb-8">
+          <div className="card-section flex flex-col md:flex-row md:justify-between md:space-y-0 md:space-x-4 md:mb-8">
             {cardArray.map((cardItem) => (
               <div
                 key={cardItem.id}
@@ -82,7 +83,7 @@ export const Dashboard = () => {
                   <HiOutlineChevronDown />
                 </div>
               </div>
-              <div className="card-content mt-4">
+              <div className="card-content mt-4 flex-wrap">
                 <div className="flex py-2">
                   <LineSvg color="#9BDD7C" />
                   <div className="flex flex-col px-5">
