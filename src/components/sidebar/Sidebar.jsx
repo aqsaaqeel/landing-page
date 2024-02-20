@@ -1,40 +1,32 @@
-import schedule_icon from "../../assets/schedule_icon.png";
-import setting_icon from "../../assets/setting_icon.png";
-import transaction_icon from "../../assets/transaction_icon.png";
-import user_icon from "../../assets/user_icon.png";
+import icon from "../../assets/icon.png";
+import icon2 from "../../assets/icon2.png";
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.png";
+import filter from "../../assets/filter.png";
+import { GradientButtons } from "../gradient-buttons/GradientButtons";
 
 export const Sidebar = () => {
   return (
-    <div className="bg-black w-auto m-10 sm:p-10 sm:m-10 rounded-3xl min-w-fit">
-      <div className="text-white font-bold text-4xl mb-4 hidden sm:block md:block lg:block">
-        Board.
+    <div className="min-w-fit h-full bg-gradient-to-b from-yellow-100 to-green-200 flex flex-col items-center">
+      <div className="text-black flex items-center justify-center text-xl p-4 gap-3">
+        <p>Apply Filter</p>
+        <img src={filter} className="flex h-4" />
       </div>
-      <ul className="text-white py-5">
-        <li className="mb-4 cursor-pointer hover:text-gray-400 flex">
-          <div className="flex justify-center">
-            <img src={schedule_icon} className="pr-4 w-8" />
-          </div>
-          <p className="hidden sm:block md:block lg:block">Dashboard</p>
-        </li>
-        <li className="mb-4 cursor-pointer hover:text-gray-400 flex">
-          <div className="block">
-            <img src={setting_icon} className="pr-4 sm:w-8" />
-          </div>
-          <p className="hidden sm:block md:block lg:block">Projects</p>
-        </li>
-        <li className="mb-4 cursor-pointer hover:text-gray-400 flex">
-          <div className="block">
-            <img src={transaction_icon} className="pr-4 sm:w-8" />
-          </div>
-          <p className="hidden sm:block md:block lg:block">Team</p>
-        </li>
-        <li className="mb-4 cursor-pointer hover:text-gray-400 flex">
-          <div className="block">
-            <img src={user_icon} className="pr-4 sm:w-8" />
-          </div>
-          <p className="hidden sm:block md:block lg:block">Reports</p>
-        </li>
-      </ul>
+      <div className="bg-black w-full mb-4" style={{ height: "1px" }}></div>
+      {/* Gradient buttons */}
+      <GradientButtons />
+      <div className="bg-black w-full mb-4" style={{ height: "1px" }}></div>
+
+      <div className="p-4 space-y-2">
+        <img src={icon} alt="triangle" />
+        <img src={icon2} alt="triangle" />
+      </div>
+      <div className="bg-black w-full mb-4" style={{ height: "1px" }}></div>
+
+      <div className="flex justify-center items-center">
+        <img src={image1} alt="icon" className="relative w-64 " />
+        <img src={image2} alt="icon" className="absolute w-64" />
+      </div>
     </div>
   );
 };

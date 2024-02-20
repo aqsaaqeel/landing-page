@@ -1,4 +1,4 @@
-export const CardComp = (props) => {
+export const Card = (props) => {
   return (
     <div className={`max-w-xs md:w-full md:min-w-[11rem] rounded-lg ${props.bgColor} p-4`}>
       <div className="flex justify-end">{props.icon}</div>

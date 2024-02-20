@@ -3,3 +3,9 @@
     flex-wrap: wrap;
   }
 }
+/* index.css or your global CSS file */
+
+body {
+  font-family: 'Clash Display', sans-serif;
+}
+

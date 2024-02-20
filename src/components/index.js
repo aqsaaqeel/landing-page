@@ -1,5 +1,3 @@
-export * from "./graphComp/LineGraphComp"
-export * from "./pieComp/PieChartComp"
-export * from "./card/CardComp"
+export * from "./card/Card"
 export * from "./sidebar/Sidebar"
 export * from "./navbar/Navbar"

@@ -22,7 +22,7 @@ export default {
         'lg': '1024px',
       },
       fontFamily: {
-        'sans': ['Montserrat', 'sans-serif'],
+        'sans': ['ClashDisplay-Regular', 'sans'],
       },
     extend: {},
   },
